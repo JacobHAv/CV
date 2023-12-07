@@ -1,0 +1,22 @@
+<%-  include("partials/header") -%>
+
+<div class="blue-section post">
+<h1>Thank you for your Messages</h1>
+<p>I will reply to them anytime soon.</p>
+<br>
+
+<h1>Previous Messages!</h1>
+
+<% posts.forEach((post) => { %>
+
+<div class="feed">
+<h3><%= post.title %></h3>
+<p><%= post.text %></p>
+<label class="feed-author"><%= post.email %></label>
+</div>
+
+<% }) %>
+
+</div>
+
+<%-  include("partials/footer") -%>

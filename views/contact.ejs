@@ -1,0 +1,51 @@
+<%-  include("partials/header") -%>
+
+<div id="contact" class="blue-section">
+    <h1>Contact me on. . .</h1>
+<!-------------------SOCIAL MEDIA------------>
+<div class="row">
+    <div class="col-lg-4 col-md-12">
+    <div class="insta contact-item">
+        <i class="fa-2x fa-brands fa-instagram"></i>
+        <p><a href="https://www.instagram.com/jakub.havrdaj/">@jakubhavrdaj</a></p>
+    </div>
+    <br>
+    <div class="messenger contact-item">
+        <i class="fa-2x fa-brands fa-facebook-messenger"></i>
+        <p><a href="https://www.messenger.com/t/100073230267324">Kuba Havrda</a></p>
+    </div>
+    <br>
+    <div class="email contact-item">
+        <i class="fa-2x fa-regular fa-envelope"></i>
+        <p>jacobhavrda@gmail.com</p>
+    </div>
+    <br>
+</div>
+<!----------PRIVATE MESSAGE----->
+
+    <div class="private-text col-lg-6 col-md-12">
+        <h2>Send me a message!</h2>
+        <div class="inbox">
+    <form action="/contact" method="post" id="Mform">
+        <label>E-mail</label>
+        <input type="text" placeholder="  example@123.com" name="email" autocomplete="off">
+        <label>Title</label>
+        <input type="text" placeholder="  Type in a title" name="title" autocomplete="off">
+        <label>Message</label>
+        <textarea rows="7" type="text" placeholder="  Describe your message here..." name="txt" >
+        </textarea>
+    </form>
+    <button class="btn-lg btn-light" form="Mform" type="submit" name="button" value="Submit">Submit</button>
+        </div>
+    </div>
+
+</div>
+
+
+    
+</div>
+
+
+
+
+<%-  include("partials/footer") -%>
