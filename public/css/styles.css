@@ -1,0 +1,202 @@
+html body{
+    background-color: #adbbc4;
+    margin: 0 120px auto 120px;
+}
+
+div h1{
+    font-size: 40px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+
+div h3{
+    font-size: 32px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+
+}
+
+div p{
+    font-family: 'Poppins';
+    font-size: 18px;
+}
+
+.blue-section{
+    background-color: #116A7B;
+    color: #F8F6F4; 
+    box-shadow: 5px 5px 8px #000000;  
+}
+
+.white-section{
+    background-color: #c6c6c6;  
+    color:#116A7B;
+    box-shadow: 5x 5px 8px #000000 ;  
+}
+
+.navbar-brand{
+    padding-left: 40px;
+}
+
+.nav-link{
+    box-shadow: 5px 5px 5px rgba(65, 65, 65, 0.1);
+    margin-left: 10px;
+}
+
+.avatar{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+#profile{
+    display: flex;
+    padding: 50px
+}
+
+#profile div{
+    padding: 20px
+}
+
+#about{
+    padding: 50px;
+}
+
+.about-item{
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #116A7B;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block; 
+    box-shadow: 5x 5px 5px rgba(255, 0, 0, 0.9);  
+}
+
+.about-item:hover{
+    background-color: #116A7B;
+    color: #F8F6F4;
+    cursor:pointer;
+}
+
+#contact{
+    padding: 10px;
+    box-shadow: 0 3px 7px #ccc;  
+
+}
+
+center p{
+    display: inline;
+}
+
+.carousel-item{
+   padding: 50px 50px 40px 50px;
+}
+
+.carousel-item img{
+    box-shadow: 0 5px 5px #286571;
+    border-radius: 25px;
+}
+
+#education{
+    padding: 50px;
+    gap: 20px;
+}
+
+#education div {
+    padding: 20px 0
+}
+
+#education .edu-img{
+    width: 300px;
+    height: 200px;
+    float: left;
+    padding-right: 20px;
+}
+
+#education .udemy-img{
+    float: right;
+    height: 220px;
+    width: 370px;
+    padding-left: 20px 
+}
+
+#contact{
+    padding-left: 50px;
+}
+
+.contact-item{
+    
+    display: flex;
+    width: 320px;
+    padding: 25px;
+    border-radius: 12px;
+    gap: 10px;
+    box-shadow: 0 5px 5px #286571;
+    
+}
+
+.insta{
+    background-color: #bc2a8d;
+}
+
+.contact-item a{
+    color: #F8F6F4;
+    text-decoration: none;
+}
+
+.contact-item p{
+    display: inline;
+    align-items: center;
+}
+
+.messenger{
+    background-color: #006AFF;
+}
+
+.email{
+    background-color: #F8F6F4;
+    color: #e83838
+
+}
+
+.inbox input{
+    width: 700px;
+    display: block;
+    height: 40px;
+    border-radius: 10px;
+    border: #adbbc4 solid;
+}
+
+label{
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.inbox textarea{
+    display: block;
+    width: 700px; 
+    border-radius: 10px;
+    border: #adbbc4 solid;   
+}
+
+.inbox button{
+    margin: 10px 0;
+    border: #adbbc4 solid;    
+}
+
+.post{
+    padding: 40px;
+}
+
+/*********POSTS SECTION*************/
+
+.feed{
+    border: solid 2px #F8F6F4;
+    border-radius: 5px;
+    margin: 30px 0;
+    padding: 10px 15px 37px;
+}
+
+.feed-author{
+    float: right;
+}
