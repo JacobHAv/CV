@@ -25,24 +25,32 @@
 <body>
     <div class="parent">
         
-        <form class="child">
+        
+        
+        <form class="child"  action="/register" method="post">
             <h1>Create User:</h1>
             <label>Username:</label>
-            <input type="Text" name="name">
+            <input type="Text" name="username">
             <br>
             <label>Password:</label>
             <input type="password" name="password">
+            <br>
+            <button type="submit" class="btn btn-dark">Submit</button>
         </form>
         
-        <form class="child">
+        <form class="child" action="/login" method="post">
             <h1>Log In:</h1>
             <label>Username:</label>
-            <input type="Text" name="name">
+            <input type="Text" name="username">
             <br>
             <label>Password:</label>
             <input type="password" name="password">
+            <br>
+            <button type="submit" class="btn btn-primary">Submit</button>
         </form>
+        
     </div>
-
+        <h3 style="color: red;"><%= response %></h3></a>
+    </form>
 </body>
 </html>

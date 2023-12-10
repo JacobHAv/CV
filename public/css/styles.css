@@ -30,7 +30,11 @@ div p{
 .white-section{
     background-color: #c6c6c6;  
     color:#116A7B;
-    box-shadow: 5x 5px 8px #000000 ;  
+    box-shadow: 5x 8px 8px #000000 ;  
+}
+
+#navbar{
+    padding: 10px 0;
 }
 
 .navbar-brand{
@@ -40,6 +44,12 @@ div p{
 .nav-link{
     box-shadow: 5px 5px 5px rgba(65, 65, 65, 0.1);
     margin-left: 10px;
+    color:#116A7B;
+}
+
+.nav-link:hover{
+    background-color: #116A7B;
+    color: #F8F6F4; 
 }
 
 .avatar{

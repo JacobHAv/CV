@@ -13,23 +13,27 @@
     <link rel="stylesheet" href="../../public/css/styles.css" type="text/css">
 </head>
 <body>
-    <!-------NAVBAR-->
-    <section id="navbar" class="white-section">
-        <div class="container-fluid navbar navbar-expand-lg bg-body-tertiary">
-          <a class="navbar-brand" href="#">JH</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="/">Profile</a>
-              <a class="nav-link" href="/#experience">Experience</a>
-              <a class="nav-link" href="/#education">Education</a>
-              <a class="nav-link" href="/contact">Contact</a>
-              <a class="nav-link" href="/posts">Messages</a>
+    <div class="blue-section post">
+        <h1>Proceed to view or delete Messages.</h1>
+        <br>
+        
+        <h1>Messages:</h1>
+        
+        <% posts.forEach((post) => { %>
+        <form method="post" action="/delete">
+            <div class="feed">
+                <h3><%= post.title %></h3>
+                <p><%= post.text %></p>
+                <label class="feed-author"><%= post.email %></label>
+                <button value=<%= post._id %> type="submit" name="delete" class="btn btn-lg btn-danger"><i class="fa-solid fa-trash"></i></button>
             </div>
-          </div>
-        </div>
-    </section>
+        </form>
+        <% }) %>
 
-
+        <form action="/logout">
+        <button class="btn-lg btn-warning">Log Out</button></a>
+        </form>
+        
+    </div>
+</body>
+</html>
